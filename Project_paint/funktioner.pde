@@ -5,7 +5,7 @@ class funktioner {
       pushStyle();
       noStroke();
       fill(c.colorR, c.colorG, c.colorB);
-      ellipse(mouseX, mouseY, circleRadius, circleRadius);
+      ellipse(mouseX, mouseY, c.brushSize, c.brushSize);
       popStyle();
     }
   }

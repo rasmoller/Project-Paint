@@ -1,6 +1,8 @@
 class gui {
-  
+  // Variables
   float boxLength = width/1.25;
+  
+  
   
   void DrawSpace() {
     pushStyle();
@@ -11,7 +13,14 @@ class gui {
   void ClearButton() {
     pushStyle();
     fill(255);
-    rect(width/30,height/100, boxLength, boxLength);
+    stroke(10);
+    rect(width/10,(height/10)/2-(boxLength/2), boxLength, boxLength, 10);
+    popStyle();
+    pushStyle();
+    fill(0);
+    textAlign(CENTER);
+    textSize(c.textSize);
+    text("Clear", width/10+boxLength/2,(height/10)/2);
     popStyle();
   }
 }

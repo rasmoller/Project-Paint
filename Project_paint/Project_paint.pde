@@ -7,7 +7,7 @@ boolean drawcontinues = true;
 boolean triangle = false;
 boolean square = false;
 boolean cls = false;
-int circleRadius = 10;
+
 
 void setup() {
   fullScreen();
@@ -20,13 +20,16 @@ void setup() {
 
 void draw() {
   ui.ClearButton();
-  if (mouseX >= width/10+(circleRadius/2) && mouseY >= height/10+(circleRadius/2)) {
+  if (mouseX >= width/10+(c.brushSize/2) && mouseY >= height/10+(c.brushSize/2)) {
     if (drawcontinues) {
       f.drawcontinues();
+    }else if(triangle){
+      //f.triangle();
     }
-    if(cls){
+    
+  }
+  if(cls){
     f.cls();
     cls = false;
     }
-  }
 }
