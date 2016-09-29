@@ -1,4 +1,5 @@
 funktioner f = new funktioner();
+gui ui = new gui();
 colors c = new colors();
 
 // activators
@@ -18,7 +19,7 @@ void setup() {
 
 
 void draw() {
-  
+  ui.ClearButton();
   if (mouseX >= width/10+(circleRadius/2) && mouseY >= height/10+(circleRadius/2)) {
     if (drawcontinues) {
       f.drawcontinues();
