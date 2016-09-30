@@ -1,6 +1,6 @@
 class gui {
   // Variables
-  float boxLength = width/1.25;
+  float boxLength = width/1.5;
   
   
   
@@ -14,7 +14,7 @@ class gui {
     pushStyle();
     fill(255);
     stroke(10);
-    rect(width/10,(height/10)/2-(boxLength/2), boxLength, boxLength, 10);
+    rect(width/10,(height/20)-(boxLength/2), boxLength, boxLength, 10);
     popStyle();
     pushStyle();
     fill(0);

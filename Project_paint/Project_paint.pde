@@ -6,6 +6,7 @@ colors c = new colors();
 boolean drawcontinues = true;
 boolean triangle = false;
 boolean square = false;
+boolean circle = false;
 boolean cls = false;
 
 
@@ -25,6 +26,10 @@ void draw() {
       f.drawcontinues();
     }else if(triangle){
       //f.triangle();
+    }else if(circle){
+    
+    }else if(square){
+    
     }
     
   }

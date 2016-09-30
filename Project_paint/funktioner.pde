@@ -3,9 +3,9 @@ class funktioner {
   void drawcontinues() {
     if (mousePressed) {
       pushStyle();
-      noStroke();
+      strokeWeight(c.brushSize);
       fill(c.colorR, c.colorG, c.colorB);
-      ellipse(mouseX, mouseY, c.brushSize, c.brushSize);
+      line(pmouseX,pmouseY,mouseX,mouseY);
       popStyle();
     }
   }
