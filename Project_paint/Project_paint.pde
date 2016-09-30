@@ -3,11 +3,11 @@ gui ui = new gui();
 colors c = new colors();
 
 // activators
-boolean drawcontinues = true;
+boolean drawContinues = true;
 boolean triangle = false;
 boolean square = false;
 boolean circle = false;
-boolean cls = false;
+boolean clear = false;
 
 
 void setup() {
@@ -20,21 +20,25 @@ void setup() {
 
 
 void draw() {
+  //buttons
   ui.ClearButton();
+  ui.DrawButton();
+  ui.TriangleButton();
+  ui.SquareButton();
+  ui.CircleButton();
+
+
   if (mouseX >= width/10+(c.brushSize/2) && mouseY >= height/10+(c.brushSize/2)) {
-    if (drawcontinues) {
-      f.drawcontinues();
-    }else if(triangle){
+    if (drawContinues) {
+      f.drawContinues();
+    } else if (triangle) {
       //f.triangle();
-    }else if(circle){
-    
-    }else if(square){
-    
+    } else if (circle) {
+    } else if (square) {
     }
-    
   }
-  if(cls){
+  if (clear) {
     f.cls();
-    cls = false;
-    }
+    clear = false;
+  }
 }
