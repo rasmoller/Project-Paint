@@ -32,9 +32,11 @@ void draw() {
     if (drawContinues) {
       f.drawContinues();
     } else if (triangle) {
-      //f.triangle();
+      f.drawTriangle();
     } else if (circle) {
+      f.drawCircle();
     } else if (square) {
+      f.drawSquare();
     }
   }
   if (clear) {

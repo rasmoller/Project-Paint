@@ -6,5 +6,7 @@ class colors {
   float colorB = 0;
   int textSize = 18;
   void mouseClicked() {
+    
+    
   }
 }

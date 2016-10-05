@@ -9,6 +9,18 @@ class funktioner {
       popStyle();
     }
   }
+  
+  void drawTriangle(){
+  
+  }
+  
+  void drawCircle(){
+  
+  }
+  
+  void drawSquare(){
+  
+  }
 
   void cls() {
     pushStyle();
